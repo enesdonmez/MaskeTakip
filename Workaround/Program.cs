@@ -6,18 +6,33 @@ namespace Workaround
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Vatandas vatandas = new Vatandas();
-            Console.WriteLine(vatandas.TcNo);
+           
+            SelamVer();
+        }
+
+        static void SelamVer()
+        {
+            Console.WriteLine("Selamlar");
+        }
+
+        private static void Degiskenler()
+        {
+            string mesaj = "Merhaba";
+            double tutar = 100000;
+            int sayi = 100;
+            bool girisYapmisMi= false;
+
+            string ad = "Enes";
+            string soyad = "Dönmez";
         }
 
         // Pascal Casing
-        public class Vatandas
-        {
-            public string Ad { get; set; }
-            public string Soyad { get; set; }
-            public int DogumYili { get; set; }
-            public long TcNo { get; set; } = 10;
-        }
-    }
+        //public class Vatandas
+        //{
+        //    public string Ad { get; set; }
+        //    public string Soyad { get; set; }
+        //    public int DogumYili { get; set; }
+        //    public long TcNo { get; set; } = 10;
+        //}
+    } 
 }
