@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Business.Concrete;
+using Business.Abstract;
+using System;
+using Entities.Concrete;
 
 namespace Workaround
 {
@@ -8,6 +11,17 @@ namespace Workaround
         {
            
             SelamVer();
+
+            Person person = new Person();
+            person.FirstName = "Enes";
+            person.LastName = "Dönmez";
+            person.NationalIdentity = 15053746966;
+            person.DayOfBirthYear = 2002;
+
+            PttManager pttManager = new PttManager(new PersonManager());
+            pttManager.GiveMask(person);
+        
+            Console.ReadLine();
         }
 
         static void SelamVer()
@@ -25,6 +39,10 @@ namespace Workaround
             string ad = "Enes";
             string soyad = "Dönmez";
         }
+
+        
+
+        
 
         // Pascal Casing
         //public class Vatandas
