@@ -15,7 +15,7 @@ namespace Workaround
             Person person = new Person();
             person.FirstName = "Enes";
             person.LastName = "Dönmez";
-            person.NationalIdentity = 15053746966;
+            person.NationalIdentity = 123;
             person.DayOfBirthYear = 2002;
 
             PttManager pttManager = new PttManager(new PersonManager());
